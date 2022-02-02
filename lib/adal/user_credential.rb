@@ -65,7 +65,7 @@ module ADAL
       @username = username
       @password = password
       @authority_host = authority_host
-      @discovery_path = "/common/userrealm/#{URI::Parser.escape @username}"
+      @discovery_path = "/common/userrealm/#{URI.escape @username}"
     end
 
     ##
